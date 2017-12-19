@@ -1,0 +1,1 @@
+spark-submit --master local[2] --class us.shalabh.ksc.stream.consumer.StockTradesConsumer kinesis-spark-consumer-0.0.1-SNAPSHOT.jar --name StockTradesConsumer --jars kinesis-spark-consumer-0.0.1-SNAPSHOT.jar

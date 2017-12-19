@@ -78,7 +78,8 @@ import scala.Tuple2;
  * for more details on the Kinesis Spark Streaming integration.
  */
 public final class StockTradesConsumer
-{ // needs to be public for access from run-example
+{ 
+	// needs to be public for access from run-example
 	private static final Pattern WORD_SEPARATOR = Pattern.compile(" ");
 
 	public static void main(String[] args) throws Exception
