@@ -119,7 +119,7 @@ public final class StockTradesConsumer
 		String regionName = KinesisExampleUtils.getRegionNameByEndpoint(endpointUrl);
 
 		// Setup the Spark config and StreamingContext
-		SparkConf sparkConfig = new SparkConf().setMaster("local[2]").setAppName("StockTradesConsumer");
+		SparkConf sparkConfig = new SparkConf().setAppName("StockTradesConsumer");
 		JavaStreamingContext jssc = new JavaStreamingContext(sparkConfig, batchInterval);
 
 		// Create the Kinesis DStreams
